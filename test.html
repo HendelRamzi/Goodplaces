@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&family=Asap:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&family=Asap:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="./OptionComponent.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-navigation d-none d-lg-block">
+            <div class="container-fluid" style="padding: 8px 24px;">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center justify-content-start">
+                            <div class="header-social-media d-flex pr-3 align-items-center">
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="opacity: 0.90;" width="12"
+                                        height="12" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                    </svg>
+                                </div>
+                                <div class="" style="margin: 0px 8px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="opacity: 0.90;" width="12"
+                                        height="12" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                    </svg>
+                                </div>
+                                <div class="" style="margin-right: 8px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="opacity: 0.90;" width="12"
+                                        height="12" fill="white" class="bi bi-pinterest" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0" />
+                                    </svg>
+                                </div>
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="opacity: 0.90;" width="12"
+                                        height="12" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <a href=""
+                                class="header-phone d-flex align-items-center justify-content-center text-white ">
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-telephone" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                    </svg>
+                                </div>
+                                <span>(+420) 777 689 000</span>
+                            </a>
+                            <a href="" class="header-email d-flex align-items-center justify-content-center text-white">
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-envelope" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                                    </svg>
+                                </div>
+                                <span>profiter@goodplaces.cz</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="" class="header-login text-white d-flex align-items-center">
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                                    </svg>
+                                </div>
+                                <span>Login</span>
+                            </a>
+                            <a href="" class="header-wishlist text-white d-flex align-items-center">
+                                <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                    </svg>
+                                </div>
+                                <span>Plánovač</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="padding: 8px 24px; position: relative;">
+            <div class="row" style="position: relative;">
+
+
+                <div class="col-12 d-flex align-items-center justify-content-between" style="padding: 8px 16px;">
+                    <div class="d-flex align-items-center justify-content-start">
+                        <a href="">
+                            <img width="140" style="object-fit: cover;" src="./img/LOGO 1.png" alt="">
+                        </a>
+                        <div class="d-none d-lg-flex align-items-center">
+                            <ul style="list-style: none;" class="d-flex align-items-center m-0 navigation">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">zajezdu</a>
+                                </li>
+                                <li id="destination-toggle" class="nav-item">
+                                    <a class="nav-link dropdown-toggle" href="">
+                                        <span>DESTINACE</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle" id="activity__dropdown" data-toggle="dropdown"
+                                        href="">AKTIVITY</a>
+                                    <div class="dropdown-menu shadow-sm " aria-labelledby="activity__dropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle" id="aboutus__dropdown" data-toggle="dropdown"
+                                        href="">O NÁS</a>
+                                    <div class="dropdown-menu shadow" aria-labelledby="aboutus__dropdown">
+                                        <a class="dropdown-item" href="#">O nás</a>
+                                        <a class="dropdown-item" href="#">Výhody cestování s Good Places</a>
+                                        <a class="dropdown-item" href="#">Přednášky</a>
+                                        <a class="dropdown-item" href="#">Pojištění CK pro případ úpadku</a>
+                                        <a class="dropdown-item" href="#">Reference - řekli o nás</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle" id="services__dropdown" data-toggle="dropdown"
+                                        href="">NAŠE SLUŽBY</a>
+                                    <div class="dropdown-menu shadow" aria-labelledby="services__dropdown">
+                                        <a class="dropdown-item" href="#">Cestovní pojištění</a>
+                                        <a class="dropdown-item" href="#">Individuální vs. skupinový zájezd</a>
+                                        <a class="dropdown-item" href="#">Levné letenky</a>
+                                        <a class="dropdown-item" href="#">Cestovatelská seznamka</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">KONTAKT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="h-100  d-flex justify-content-center align-items-center" style="position: relative;">
+                        <button class="cta_btn d-none d-md-block mr-md-0">Zkuste individuální zájezd</button>
+                        <button class="d-lg-none" type="button"
+                            style="background: none; border: none; margin-left: 8px;" id="dropmenu">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-12 nav-modal__overlay d-lg-none">
+                    <div class="modal nav-modal-container">
+                        <div class="fullscreen-modal__wrapper">
+                            <div class="modal__container ">
+                                <div class="modal__content">
+                                    <!-- This will change -->
+
+                                    <div id="pr" class="nav-modal__panel">
+                                        <div class="nav-modal__primary-panel">
+                                            <ul class="p-0" style="list-style: none; margin: 20px  0px 0px 0px;">
+                                                <li class="nav-modal__item">
+                                                    <a href=""
+                                                        class="d-flex justify-content-between align-items-center">
+                                                        ZAJEZDU
+                                                    </a>
+                                                </li>
+                                                <li class="nav-modal__item">
+                                                    <a data-secondaryMenu="destination__menu" href="#"
+                                                        class="d-flex justify-content-between align-items-center with_sm---btn">
+                                                        DESTINACE
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-chevron-right "
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-modal__item">
+                                                    <a href="" data-secondaryMenu="aboutus__menu"
+                                                        class="d-flex justify-content-between align-items-center with_sm---btn">
+                                                        O NÁS
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-chevron-right "
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-modal__item">
+                                                    <a href=""
+                                                        class="d-flex justify-content-between align-items-center">
+                                                        AKTIVITY
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-chevron-right "
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-modal__item">
+                                                    <a href="" data-secondaryMenu="services__menu"
+                                                        class="d-flex justify-content-between align-items-center with_sm---btn">
+                                                        NAŠE SLUŽBY
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-chevron-right "
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-modal__item">
+                                                    <a href=""
+                                                        class="d-flex justify-content-between align-items-center">KONTAKT</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="divider"></div>
+                                        <div class="nav-modal__bottom-panel">
+                                            <ul class="p-0 m-0" style="list-style: none;">
+                                                <li class="nav-modal__bottom--items">
+                                                    <a href="">Login</a>
+                                                </li>
+                                                <li class="nav-modal__bottom--items">
+                                                    <a href="">Plánovač</a>
+                                                </li>
+
+                                                <li
+                                                    class="nav-modal__bottom--contact d-flex align-items-center justify-content-between">
+                                                    <div
+                                                        class="nav-modal__bottom--phone d-flex align-items-center justify-content-start">
+                                                        <div class="" style="margin-right: 8px;">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor" class="bi bi-telephone"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                                            </svg>
+                                                        </div>
+                                                        <span>(+420) 777 689 000</span>
+                                                    </div>
+                                                    <div
+                                                        class="nav-modal__bottom--sm d-flex align-items-center justify-content-end">
+                                                        <div class="">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                style="opacity: 0.62;" width="12" height="12"
+                                                                fill="black" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="" style="margin: 0px 8px;">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                style="opacity: 0.62;" width="12" height="12"
+                                                                fill="black" class="bi bi-instagram"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="" style="margin-right: 8px;">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                style="opacity: 0.62;" width="12" height="12"
+                                                                fill="black" class="bi bi-pinterest"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                style="opacity: 0.62;" width="12" height="12"
+                                                                fill="black" class="bi bi-youtube" viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <div id="destination__menu" class="nav-modal__panel p_hidden ">
+                                        <div class="nav-modal__primary-panel">
+                                            <div class="nav-modal__item nav-modal__item--header ">
+                                                <a class="nav-modal__item-text p-0 m-0 d-flex justify-content-start align-items-center backToPrimary"
+                                                    data-menuId="destination__menu">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-right"
+                                                        style="transform: rotate(180deg); margin-right: 8px;"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                    </svg>
+                                                    DESTINACE
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="nav-modal__bottom-panel">
+                                            <ul class=" contry-list p-0 m-0" style="list-style: none;">
+                                                <li class="" data-toggle="collapse" href="#europe" role="button"
+                                                    aria-expanded="false" aria-controls="europe">
+                                                    <a href="#">Europe</a>
+                                                </li>
+                                                <div class="row">
+                                                    <div class="col ">
+                                                        <div class="collapse" id="europe">
+                                                            <ul class=" city-list p-0 m-0" style="list-style: none;">
+                                                                <li>france</li>
+                                                                <li>Spain</li>
+                                                                <li>Germany</li>
+                                                                <li>Portugal</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <li>
+                                                    <a href="">asia</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">africa</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">america</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">america latina</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <div id="aboutus__menu" class="nav-modal__panel p_hidden ">
+                                        <div class="nav-modal__primary-panel">
+                                            <div class="nav-modal__item nav-modal__item--header ">
+                                                <a class="nav-modal__item-text p-0 m-0 d-flex justify-content-start align-items-center backToPrimary"
+                                                    data-menuId="aboutus__menu">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-right"
+                                                        style="transform: rotate(180deg); margin-right: 8px;"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                    </svg>
+                                                    O nás
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="nav-modal__bottom-panel">
+                                            <ul class=" contry-list p-0 m-0" style="list-style: none;">
+                                                <li>
+                                                    <a href="#">O nás</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="">Výhody cestování s Good Places</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Přednášky</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Pojištění CK pro případ úpadku</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Reference - řekli o nás</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <div id="services__menu" class="nav-modal__panel p_hidden ">
+                                        <div class="nav-modal__primary-panel">
+                                            <div class="nav-modal__item nav-modal__item--header ">
+                                                <a class="nav-modal__item-text p-0 m-0 d-flex justify-content-start align-items-center backToPrimary"
+                                                    data-menuId="services__menu">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chevron-right"
+                                                        style="transform: rotate(180deg); margin-right: 8px;"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                    </svg>
+                                                    NAŠE SLUŽBY
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="nav-modal__bottom-panel">
+                                            <ul class=" contry-list p-0 m-0" style="list-style: none;">
+                                                <li>
+                                                    <a href="#">Cestovní pojištění</a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="">Individuální vs. skupinový
+                                                        zájezd</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Levné letenky</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Cestovatelská seznamka</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="dropdown__container nav-dropdown">
+                    <div class="nav-dropdown__content">
+                        <div class="row" style="height: 27rem;">
+
+                            <div class="col-2 navigation-flex__columns__left ">
+                                <div class="">
+                                    <ul class="nav navigation__continents flex-column" id="myTab" role="tablist">
+                                        <li class="nav-item ">
+                                            <a class="nav-link active d-flex align-items-center justify-content-between"
+                                                id="eu-tab" data-toggle="tab" href="#eu" role="tab" aria-controls="eu"
+                                                aria-selected="true">Europe
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="currentColor" class="bi bi-chevron-right "
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center justify-content-between"
+                                                id="as-tab" data-toggle="tab" href="#as" role="tab" aria-controls="as"
+                                                aria-selected="false">Asia
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="currentColor" class="bi bi-chevron-right "
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center justify-content-between"
+                                                id="al-tab" data-toggle="tab" href="#al" role="tab" aria-controls="al"
+                                                aria-selected="false">America latina
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="currentColor" class="bi bi-chevron-right "
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center justify-content-between"
+                                                id="am-tab" data-toggle="tab" href="#am" role="tab" aria-controls="am"
+                                                aria-selected="false">America
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="currentColor" class="bi bi-chevron-right "
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link d-flex align-items-center justify-content-between"
+                                                id="af-tab" data-toggle="tab" href="#af" role="tab" aria-controls="af"
+                                                aria-selected="false">Africa
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                    fill="currentColor" class="bi bi-chevron-right "
+                                                    viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bottom-links">
+                                    <a class="continent_linkbtn" href="">Browse All Places</a>
+                                </div>
+                            </div>
+                            <div class="col-10 h-100">
+                                <div class="row tab-content h-100" id="myTabContent">
+                                    <div class="col-12 tab-pane fade show active h-100" id="eu" role="tabpanel"
+                                        aria-labelledby="europe-tab">
+                                        <div class="row h-100">
+
+                                            <div class="col-8 h-100">
+                                                <h3 class="continants__title">Europe destinations</h3>
+                                                <ul class="contry__list--megamenu">
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">France</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Germany</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Spain</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Portugal</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Sweden</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Portugal</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="continant__bg col-4"
+                                                style="background-image: url(./europe.png);">
+                                                <div class="continant__bg--overlay"></div>
+                                                <div class=" h-100 text-white" style="position: relative; z-index: 10;">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 tab-pane fade h-100" id="as" role="tabpanel"
+                                        aria-labelledby="as-tab">
+                                        <div class="row h-100">
+                                            <div class="col-8 h-100">
+                                                <h3 class="continants__title">asia destinations</h3>
+                                                <ul class="contry__list--megamenu">
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Cambodia</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">China</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">India</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Japan</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Laos</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Malaysia</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Nepal</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Singapore</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">South Korea</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Sri Lanka</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Thailand</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Vietnam</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="continant__bg col-4" style="background-image: url(./asia.png);">
+                                                <div class="continant__bg--overlay"></div>
+                                                <div class=" h-100 text-white" style="position: relative; z-index: 10;">
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="col-12 tab-pane fade h-100" id="al" role="tabpanel"
+                                        aria-labelledby="al-tab">
+                                        <div class="row h-100">
+                                            <div class="col-8 h-100">
+                                                <h3 class="continants__title">Europe destinations</h3>
+                                                <ul class="contry__list--megamenu">
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">France</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Germany</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Spain</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Portugal</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Sweden</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Portugal</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class=" h-100 bg-dark">
+                                                    vddvq
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12 tab-pane fade h-100" id="am" role="tabpanel"
+                                        aria-labelledby="am-tab">
+                                        <div class="row h-100">
+                                            <div class="col-8 h-100">
+                                                <h3 class="continants__title">America destinations</h3>
+                                                <ul class="contry__list--megamenu">
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">France</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Germany</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Spain</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Portugal</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Sweden</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Portugal</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class=" h-100 bg-dark">
+                                                    vddvq
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12 tab-pane fade h-100" id="af" role="tabpanel"
+                                        aria-labelledby="af-tab">
+                                        <div class="row h-100">
+                                            <div class="col-8 h-100">
+                                                <h3 class="continants__title">Africa destinations</h3>
+                                                <ul class="contry__list--megamenu">
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">France</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Germany</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Spain</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Portugal</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Sweden</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Portugal</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class=" h-100 bg-dark">
+                                                    vddvq
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center align-items-center" style="height: 100vh;">
+
+
+                <div class="filter__container d-flex align-items-center shadow-sm">
+                    <div class="filter__section--input flex-grow-1">
+                        <div class="filter__input--container d-flex align-items-center">
+                            <div class="filter__input flex-grow-1" style="padding-left: 16px;">
+                                <input autocomplete="off" class="w-100" type="text" name="search"
+                                    placeholder="Where shell we go ?">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter__section--Button ">
+                        <div class="filter__seach--button">
+                            <button class="search_button">Search</button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="filter__element shadow">
+                        <div class="row">
+
+
+                            <div class="col-12 d-flex align-items-center justify-content-start"
+                                style="margin-bottom: 8px;">
+                                <a class="tag__container" href="#">
+                                    Individual Tours
+                                </a>
+                                <a class="tag__container" href="#">
+                                    <div class="tag__content">
+                                        <span>Group Tours</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                            <div class="col-12 d-flex align-items-center justify-content-start "
+                                style="margin-bottom: 8px;">
+                                <div class="filter__input--text flex-grow-1">
+                                    <div class="custom--select" data-placeholder = "Select the destination">
+                                        <div class="select--box">
+                                            <input type="text" class="tags_input" name="tags" hidden>
+                                            <div class="selected--options">
+                                                <!-- This will be filled by a javascript function -->
+                                            </div>
+                                            <div class="arrow">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd"
+                                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="options">
+                                            <div class="option-search-tags">
+                                                <input type="text" class="search-tags" placeholder="Search Destination...">
+                                                <button type="button" class="clear--button">
+                                                    &times;
+                                                </button>
+                                            </div>
+                                            <div class="option__item all-tags" data-value="All">Select All</div>
+                                            <div class="option__item " data-value="France">France</div>
+                                            <div class="option__item " data-value="Germany">Germany</div>
+                                            <div class="option__item " data-value="Spain">Spain</div>
+                                            <div class="option__item " data-value="Portugal">Portugal</div>
+                                            <div class="option__item" data-value="Sweden">Sweden</div>
+                                            <div class="option__item" data-value="Cambodia">Cambodia</div>
+                                            <div class="option__item" data-value="China">China</div>
+                                            <div class="option__item" data-value="India">India</div>
+                                            <div class="option__item" data-value="Japan">Japan</div>
+                                            <div class="option__item" data-value="Laos">Laos</div>
+                                            <div class="option__item" data-value="Malaysia">Malaysia</div>
+                                            <div class="option__item" data-value="Nepal">Nepal</div>
+                                            <div class="option__item" data-value="Singapore">Singapore</div>
+                                            <div class="option__item" data-value="South-Korea">South Korea</div>
+                                            <div class="option__item" data-value="Sri-Lanka">Sri Lanka</div>
+                                            <div class="option__item" data-value="Thailand">Thailand </div>
+                                            <div class="option__item" data-value="Vietnam">Vietnam</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-12" style="margin-bottom: 16px;">
+                                <div class="row" style="padding: 0px 16px;">
+
+
+                                    <div class="col-12 col-md-6 p-0">
+                                        <div class="filter__input--month ">
+                                            <input class="form-control" type="month" multiple>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 p-0">
+                                        <div class="filter__input--activities">
+                                            <div class="custom--select" data-placeholder = "Select the Activities">
+                                                <div class="select--box">
+                                                    <input type="text" class="tags_input" name="tags" hidden>
+                                                    <div class="selected--options">
+                                                        <!-- This will be filled by a javascript function -->
+                                                    </div>
+                                                    <div class="arrow">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-chevron-down"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="options">
+                                                    <div class="option-search-tags">
+                                                        <input type="text" class="search-tags"
+                                                            placeholder="Search Activities...">
+                                                        <button type="button" class="clear--button">
+                                                            &times;
+                                                        </button>
+                                                    </div>
+                                                    <div class="option__item all-tags" data-value="All">Select All</div>
+                                                    <div class="option__item " data-value="Kultura-a-historie">Kultura a historie</div>
+                                                    <div class="option__item " data-value="Trekking">Trekking</div>
+                                                    <div class="option__item " data-value="Příroda">Příroda</div>
+                                                    <div class="option__item " data-value="Meditace-a-jóga">Meditace a jóga</div>
+                                                    <div class="option__item" data-value="Etno">Etno</div>
+                                                    <div class="option__item" data-value="Jeep-tours">Jeep tours</div>
+                                                    <div class="option__item" data-value="Dovolená-na-koni">Dovolená na koni</div>
+                                                    <div class="option__item" data-value="Fotografie">Fotografie</div>
+                                                    <div class="option__item" data-value="Cyklistika-a-MTB">Cyklistika a MTB</div>
+                                                    <div class="option__item" data-value="Lyžování-freeride-skialp">Lyžování, freeride, skialp</div>
+                                                    <div class="option__item" data-value="Relax-a-digitální-nomádství">Relax a digitální nomádství</div>
+                                                    <div class="option__item" data-value="Cestování-s-dětmi">Cestování s dětmi</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                <button class="filter__button--reset">Reset</button>
+                                <button class="filter__button--submit">Search</button>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+    <script src="./OptionComponent.js"></script>
+
+
+    <script>
+        document.getElementById('dropmenu').addEventListener('click', e => {
+            e.preventDefault();
+            document.querySelector('.nav-modal__overlay').classList.toggle('nav-modal__overlay--active');
+        })
+
+        document.getElementById('destination-toggle').addEventListener('click', e => {
+            e.preventDefault();
+            document.querySelector('.nav-dropdown').classList.toggle('nav-dropdown--active');
+        })
+
+        const wsm__btn = document.getElementsByClassName('with_sm---btn');
+        for (let i = 0; i < wsm__btn.length; i++) {
+            wsm__btn[i].addEventListener('click', e => {
+                e.preventDefault();
+                openSecondaryMenu(wsm__btn[i].getAttribute("data-secondaryMenu"))
+            })
+        }
+
+        const btp__btn = document.getElementsByClassName('backToPrimary');
+        for (let i = 0; i < btp__btn.length; i++) {
+            btp__btn[i].addEventListener('click', e => {
+                e.preventDefault();
+                closeSecondaryMenu(btp__btn[i].getAttribute('data-menuId'))
+            })
+        }
+
+
+
+        const openSecondaryMenu = (sm__id) => {
+            document.querySelector('#' + sm__id).classList.remove('p_hidden');
+            document.querySelector('#' + sm__id).classList.add('p_visible');
+            document.querySelector('#pr').classList.add('p_hidden');
+        }
+        const closeSecondaryMenu = (sm__id) => {
+            document.querySelector('#' + sm__id).classList.remove('p_visible');
+            document.querySelector('#' + sm__id).classList.add('p_hidden');
+            document.querySelector('#pr').classList.remove('p_hidden');
+        }
+
+    </script>
+
+
+    <script>
+        document.querySelector('input[name="search"]').addEventListener('click', e => {
+            e.preventDefault()
+            document.getElementsByClassName('filter__container')[0].classList.toggle('filter__container--active');
+            document.getElementsByClassName('filter__element')[0].classList.toggle('filter__element--active');
+        })
+
+        document.querySelectorAll('.tag__container')
+        .forEach(tag => {
+            tag.addEventListener('click', e => {
+                e.preventDefault()
+                tag.classList.toggle('tag__container--selected')
+            })
+        })
+    </script>
+
+</body>
+
+
+
+
+</html>
