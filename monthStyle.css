@@ -59,11 +59,14 @@
 .month__item.month__item--active{
     background-color: rgb(80, 80, 240);
     color: white;
+    border:  white 1px solid;
+
 }
 
 .month__item.month__item--sub{
-    background-color: rgba(80, 80, 240, 0.068);
-    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(80, 80, 240);
+    color: white;
+    border:  white 1px solid;
 }
 
 
