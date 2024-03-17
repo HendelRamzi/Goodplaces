@@ -1,0 +1,120 @@
+.month__picker--container{
+    width: 100%;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    background-color: white;
+    padding: 8px 16px;
+}
+
+.month__picker--container.month__picker--container--active{
+    display: block;
+}
+
+.month__picker--header{
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.116);
+    border-radius: 4px;
+
+}
+
+.year__display {
+    width: 100%;
+    text-align: center;
+}
+
+.previous__button, 
+.next__button{
+    padding: 8px 16px;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+
+}
+
+.previous__button:hover, 
+.next__button:hover,
+.month__item:hover{
+    background-color: rgba(128, 128, 128, 0.068);
+}
+
+
+.month__list--row{
+    margin-top: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.116);
+    border-radius: 4px;
+}
+
+.month__item{
+    padding: 8px 16px;
+    flex-grow: 1;
+    position: relative;
+    text-align: center;
+    background: transparent;
+    border: none;
+}
+
+.month__item.month__item--active{
+    background-color: rgb(80, 80, 240);
+    color: white;
+}
+
+.month__item.month__item--sub{
+    background-color: rgba(80, 80, 240, 0.068);
+    color: rgba(0, 0, 0, 0.623);
+}
+
+
+.month__item:first-child{
+    border-right: 1px solid rgba(128, 128, 128, 0.116);
+}
+.month__item:last-child{
+    border-left: 1px solid rgba(128, 128, 128, 0.116);
+}
+
+
+
+
+
+
+/* ================================================ */
+.month__select--container{
+    width: 100%;
+    position: relative;
+}
+
+.select__container{
+    padding: 8px 16px;
+    border: 1px solid rgba(128, 128, 128, 0.116);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.select__container:hover{
+    border: 1px solid rgba(128, 128, 128, 0.342);
+
+}
+
+
+.month__display--form{
+    position: relative;
+    overflow: hidden;
+}
+
+.month__display--form input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    display: none;
+    pointer-events: none;
+}
+
+.span__display--placeholder{
+    font-size: 16px;
+    color: rgba(87, 87, 87, 0.76);
+}
