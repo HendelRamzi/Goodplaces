@@ -51,7 +51,8 @@
     background-color: #fff;
     border: 1px solid rgba(128, 128, 128, 0.082);
     border-top: none;
-    max-height: 250px;
+    border-radius: 4px;
+    max-height: 300px;
     overflow-y: auto;
     z-index: 1;
 }
