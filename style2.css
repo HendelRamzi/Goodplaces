@@ -428,7 +428,7 @@ MEGA MENU NAVIGATION
     border-radius: 4px 0px 0px 4px;
     position: relative;
 }
-
+/* 
 .filter__container--active {
     border: 3px solid #086059;
     border-radius: 4px;
@@ -437,7 +437,7 @@ MEGA MENU NAVIGATION
 .filter__container--active .filter__section--Button {
     opacity: 0;
     pointer-events: none;
-}
+} */
 
 
 .filter__section--Button {
