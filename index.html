@@ -1181,6 +1181,14 @@
             handleCloseElements('custom--select', "open", e)
             handleCloseElements('filter__element', "filter__element--active", e)
             handleCloseElements('dropdown__container', "nav-dropdown--active", e)
+
+            document.querySelectorAll('.selectize-input')
+                .forEach(item => {
+                    console.log(item)
+                    if (!item.contains(event.target) && item.classList.contains("dropdown-active")) {
+                        item.nextElementSibling.style.display ="none"; 
+                    }
+            })
         });
     </script>
 
