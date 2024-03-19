@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,8 +16,23 @@
         href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600;700&family=Asap:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.bootstrap3.min.css"
+        integrity="sha512-cNefX8/Vd+UJbeYHzwdRZYEHI1K5Wj+gCdaK4R767/8SFhqMaHHg881hZONXpq4ainln9e330TalryDPKysm2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65f9815f594b6100125a1f17&product=sticky-share-buttons&source=platform" async="async"></script>
+
+
+
     <link rel="stylesheet" href="./style2.css">
-    <link rel="stylesheet" href="./OptionComponent.css">
+    <!-- <link rel="stylesheet" href="./OptionComponent.css"> -->
     <link rel="stylesheet" href="./monthStyle.css">
 </head>
 
@@ -761,10 +775,9 @@
                         </div>
                     </div>
 
-                    <div class="filter__section--Button ">
-                        <div class="filter__seach--button">
-                            <button class="search_button">Search</button>
-                        </div>
+
+                    <div class="filter__seach--button">
+                        <button class="search_button">Search</button>
                     </div>
 
                     <div class="filter__element shadow">
@@ -795,11 +808,10 @@
                             <div class="col-12 d-flex align-items-center justify-content-start "
                                 style="margin-bottom: 8px;">
                                 <div class="filter__input--text flex-grow-1">
-                                    <div class="custom--select" data-placeholder="Destination">
+                                    <!-- <div class="custom--select" data-placeholder="Destination">
                                         <div class="select--box">
                                             <input type="text" class="tags_input" name="tags" hidden>
                                             <div class="selected--options">
-                                                <!-- This will be filled by a javascript function -->
                                             </div>
                                             <div class="arrow">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -836,7 +848,52 @@
                                             <div class="option__item" data-value="Thailand">Thailand </div>
                                             <div class="option__item" data-value="Vietnam">Vietnam</div>
                                         </div>
-                                    </div>
+                                    </div> -->
+
+                                    <select class="destination__select" multiple>
+                                        <optgroup label="Asie">
+                                            <option value="56d5370a-ce95-410a-ab03-4b7bfd13d2bf">Indie</option>
+                                            <option value="3c9d0785-feff-42a6-a814-a2cb32cf7365">Nepál</option>
+                                            <option value="a4eb7c18-d984-4004-a482-33d3c83f188f">Írán</option>
+                                            <option value="7e977d55-e39d-454c-8c0a-0465eb27f2e7">Kyrgyzstán</option>
+                                            <option value="70d6c60c-5e5f-4325-9a4c-d9388d5abc3c">Tádžikistán</option>
+                                            <option value="6e9b43c7-f2df-4d8c-84c8-522f68496757">Kazachstán</option>
+                                            <option value="985b7486-d457-4b82-97fd-e8536c4f2218">Tibet</option>
+                                            <option value="76140bb5-95ac-4192-86f8-d60fba3f8aa8">Gruzie</option>
+                                            <option value="4842c506-743b-4af1-aebb-f43cfb5982b9">Uzbekistán</option>
+                                            <option value="7286e897-a5a7-4706-93e9-6f7cfb4d2798">Čína</option>
+                                            <option value="fe67be58-ba86-49c2-a982-da201656c57d">Turkmenistán</option>
+                                            <option value="4b989306-c23f-4811-8a86-b5c66f6c211f">Barma (Myanmar)
+                                            </option>
+                                            <option value="282a1c66-0226-4c92-a567-37e5ef620421">Mongolsko</option>
+                                            <option value="105f7aa4-e6da-4b01-9325-81bc9a49fca6">Pákistán</option>
+                                            <option value="fc4219f5-197d-4336-a879-e1bdb4cb9fcc">Indonésie</option>
+                                            <option value="f6df6157-5071-4625-ae2e-a87788878111">Laos</option>
+                                            <option value="4e388dcc-6027-48d3-ba4d-87bbd11389d3">Vietnam</option>
+                                            <option value="9965ab04-674b-4297-9dc1-71baf54d8ae1">Saúdská Arábie</option>
+                                            <option value="8aaaee3c-18ff-43c8-b6fc-2565ea05a855">Afghánistán</option>
+                                            <option value="bca8a59a-3e1f-4083-8cd1-9288c2b16d8b">Bangladéš</option>
+                                        </optgroup>
+                                        <optgroup label="Afrika">
+                                            <option value="4aed5f32-a0ca-47d1-89f4-c53fcbc3d167">Alžírsko</option>
+                                            <option value="9af319b1-357e-4eae-a429-2849c5e7607c">Egypt</option>
+                                            <option value="4b99cca7-9165-4c12-801d-f276a1d625a9">Maroko</option>
+                                            <option value="ffec558d-62c4-4a37-980c-5f79f0ee2411">Keňa</option>
+                                            <option value="e5c3975c-68a1-4321-a099-95500597cd7e">Tanzánie</option>
+                                        </optgroup>
+                                        <optgroup label="Jižní Amerika">
+                                            <option value="8d24b412-b212-47ce-98a2-61340456175e">Peru</option>
+                                            <option value="dd020aba-8d6a-4a4e-8f23-4bd91e2b7b4a">Bolívie</option>
+                                            <option value="1355695e-771e-45c4-adcd-2002c2abca21">Kolumbie</option>
+                                            <option value="af82bcf8-c5ca-49e8-a33b-c7a81278de22">Venezuela</option>
+                                        </optgroup>
+                                        <optgroup label="Střední Amerika">
+                                            <option value="911e2b24-d173-4261-abde-7b971242e4e8">Mexiko</option>
+                                            <option value="ebeed384-b0c6-4f88-b86e-d7c873e8e8e7">Guatemala</option>
+                                            <option value="72e9be76-9a1c-4fb9-98d8-0d63433b4ac4">Belize</option>
+                                            <option value="950e8d92-9e7c-421b-9f8e-74ce239d24c6">Kostarika</option>
+                                        </optgroup>
+                                    </select>
                                 </div>
                             </div>
 
@@ -848,16 +905,16 @@
 
                                     <div class="col-12 col-md-6 " style="padding:0px  16px 0px 0px;">
                                         <div class="month__select--container" data-placeholder="When ?">
-                                            <div class="select__container d-flex">
+                                            <div class="select__container  d-flex">
                                                 <div class="month__display--form flex-grow-1">
                                                     <span id="month__display--select">
                                                         <!-- This will be filled by js code -->
                                                     </span>
-                                                    <input type="text" name="month_range" >
+                                                    <input type="text" name="month_range">
                                                 </div>
                                                 <div class="month__display--icon">
 
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
                                                         fill="currentColor" class="bi bi-calendar-month"
                                                         viewBox="0 0 16 16">
                                                         <path
@@ -892,11 +949,10 @@
 
                                     <div class="col-12 col-md-6 p-0">
                                         <div class="filter__input--activities">
-                                            <div class="custom--select" data-placeholder="Activities">
+                                            <!-- <div class="custom--select" data-placeholder="Activities">
                                                 <div class="select--box">
                                                     <input type="text" class="tags_input" name="tags" hidden>
                                                     <div class="selected--options">
-                                                        <!-- This will be filled by a javascript function -->
                                                     </div>
                                                     <div class="arrow">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -936,7 +992,23 @@
                                                     <div class="option__item" data-value="Cestování-s-dětmi">Cestování s
                                                         dětmi</div>
                                                 </div>
-                                            </div>
+                                            </div> -->
+
+                                            <select class="activities__select " multiple name="filter[activities][]">
+                                                <option value="33971a87-1d0b-47cd-8f65-10506d43733e">Kultura a historie</option>   
+                                                <option value="5cf9305a-55a5-4d81-a03c-c70e73da5f02">Trekking</option>
+                                                <option value="dbaec2fc-0ce8-4567-a2c9-be2116e56c5d">Příroda</option>
+                                                <option value="56a70686-e055-4272-bfaf-71daa71e5c7d">Meditace a jóga</option>
+                                                <option value="7cc1c141-4596-4af4-9d1b-aa12c9c734fe">Fotografie</option>
+                                                <option value="2c03912d-ed55-4b2f-9b6f-a88b0535b606">Dovolená na koni</option>
+                                                <option value="e2f44c11-1279-4052-b22f-e3f251deae1c">Etno</option>
+                                                <option value="968b102e-55a4-4371-922b-0a1310d7bb39">Jeep tours</option>
+                                                <option value="0056d922-4efc-49f4-ba08-732138ccb511">Cyklistika a MTB</option>
+                                                <option value="05df122e-08ae-4943-8e1a-87cdce6ebb66">Lyžování, freeride,skialp</option>
+                                                <option value="6c8fa1dc-41ae-480b-8056-a22fcdbdea72">Relax a digitálnínomádství</option>
+                                                <option value="f9add468-e048-4388-98c2-f3bc3e7bb30a">Cestování s dětmi</option>
+                                            </select>
+
                                         </div>
                                     </div>
 
@@ -950,7 +1022,7 @@
 
 
 
-                            <div class="col-12 d-flex align-items-center justify-content-center">
+                            <div class="col-12 d-flex align-items-center justify-content-start">
                                 <button class="filter__button--reset">Reset filter</button>
                                 <!-- <button class="filter__button--submit">Search</button> -->
                             </div>
@@ -971,23 +1043,61 @@
         </div>
     </section>
 
+
+
+
+
+
+
+
+
+
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12" style="height: 50vh; padding-top: 160px; background-color: rgba(128, 128, 128, 0.151);"></div>
+            <div class="col-12" style="height: 50vh; padding-top: 160px; background-color: rgba(128, 128, 128, 0.151);">
+            </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
 
-    <script src="./OptionComponent.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js"
+        integrity="sha512-IOebNkvA/HZjMM7MxL0NYeLYEalloZ8ckak+NDtOViP7oiYzG5vn6WVXyrJDiJPhl4yRdmNAG49iuLmhkUdVsQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        $(document).ready(() => {
+            $('.destination__select').selectize({
+                plugins: ['remove_button'],
+                placeholder: "Destinations",
+                sortField: 'text',
+                labelField: "value",
+                delimiter: ",",
+
+            });
+            $('.activities__select').selectize({
+                plugins: ['remove_button'],
+                placeholder: "Activities",
+                sortField: 'text',
+                labelField: "value",
+                delimiter: ",",
+            });
+        })
+    </script>
+
+
+
+    <!-- <script src="./OptionComponent.js"></script> -->
     <script src="./monthScript.js"></script>
 
     <script>
@@ -1036,7 +1146,6 @@
     <script>
         document.querySelector('input[name="search"]').addEventListener('click', e => {
             e.preventDefault()
-            // document.getElementsByClassName('filter__container')[0].classList.toggle('filter__container--active');
             document.getElementsByClassName('filter__element')[0].classList.toggle('filter__element--active');
         })
 
@@ -1051,8 +1160,8 @@
 
     <script>
         document.addEventListener('mouseup', function (e) {
-            const monthPicker = document.querySelector('.month__picker--container'); 
-            if(!monthPicker.contains(e.target) && monthPicker.classList.contains('month__picker--container--active')){
+            const monthPicker = document.querySelector('.month__picker--container');
+            if (!monthPicker.contains(e.target) && monthPicker.classList.contains('month__picker--container--active')) {
                 monthPicker.classList.remove('month__picker--container--active')
             }
 
@@ -1065,6 +1174,8 @@
                 })
         });
     </script>
+
+
 
 </body>
 

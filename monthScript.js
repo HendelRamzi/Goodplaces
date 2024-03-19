@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let current__year = (new Date()).getFullYear()
     let from = "";
     let to = "";
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    const months = ['led', 'úno', 'bře', 'dub', 'kvě', 'čvn', 'čvn', 'srp', 'zář', 'říj', 'lis', 'pro']
     // Handle update the top of the calender
     const updateTopCalender = (month__picker) => {
         month__picker.querySelector('.year__display').textContent = current__year;

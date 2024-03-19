@@ -89,18 +89,23 @@
 }
 
 .select__container{
-    padding: 8px 16px;
-    border: 1px solid rgba(128, 128, 128, 0.116);
-    border-radius: 8px;
+    padding: 8px 8px;
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
     margin-bottom: 16px;
     cursor: pointer;
 }
 
 .select__container:hover{
     border: 1px solid rgba(128, 128, 128, 0.342);
-
 }
 
+.select__container .month__display--icon {
+    line-height: 16px;
+}
+.select__container .month__display--form {
+    line-height: 16px;
+}
 
 .month__display--form{
     position: relative;
@@ -119,5 +124,5 @@
 
 .span__display--placeholder{
     font-size: 16px;
-    color: rgba(87, 87, 87, 0.76);
+    color: #303030;
 }

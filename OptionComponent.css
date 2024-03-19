@@ -50,7 +50,7 @@
     width: 100%; 
     background-color: #fff;
     border: 1px solid rgba(128, 128, 128, 0.082);
-    border-top: none;
+    border-top: none;   
     border-radius: 4px;
     max-height: 300px;
     overflow-y: auto;

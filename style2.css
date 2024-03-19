@@ -555,6 +555,7 @@ MEGA MENU NAVIGATION
     color: #086059;
     font-size: 14px;
     margin-right: 8px;
+    text-decoration: underline;
 }
 
 .filter__button--submit {
@@ -605,3 +606,14 @@ MEGA MENU NAVIGATION
 }
 
 
+
+/* 
+    ============================================
+    selectize overwrite style
+    ============================================
+*/
+
+
+.selectize-input > div.item .remove {
+    border: none !important;
+}
