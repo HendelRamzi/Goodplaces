@@ -27,7 +27,9 @@
 
 
 
-        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=65f9815f594b6100125a1f17&product=sticky-share-buttons&source=platform" async="async"></script>
+    <script type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=65f9815f594b6100125a1f17&product=sticky-share-buttons&source=platform"
+        async="async"></script>
 
 
 
@@ -995,18 +997,25 @@
                                             </div> -->
 
                                             <select class="activities__select " multiple name="filter[activities][]">
-                                                <option value="33971a87-1d0b-47cd-8f65-10506d43733e">Kultura a historie</option>   
+                                                <option value="33971a87-1d0b-47cd-8f65-10506d43733e">Kultura a historie
+                                                </option>
                                                 <option value="5cf9305a-55a5-4d81-a03c-c70e73da5f02">Trekking</option>
                                                 <option value="dbaec2fc-0ce8-4567-a2c9-be2116e56c5d">Příroda</option>
-                                                <option value="56a70686-e055-4272-bfaf-71daa71e5c7d">Meditace a jóga</option>
+                                                <option value="56a70686-e055-4272-bfaf-71daa71e5c7d">Meditace a jóga
+                                                </option>
                                                 <option value="7cc1c141-4596-4af4-9d1b-aa12c9c734fe">Fotografie</option>
-                                                <option value="2c03912d-ed55-4b2f-9b6f-a88b0535b606">Dovolená na koni</option>
+                                                <option value="2c03912d-ed55-4b2f-9b6f-a88b0535b606">Dovolená na koni
+                                                </option>
                                                 <option value="e2f44c11-1279-4052-b22f-e3f251deae1c">Etno</option>
                                                 <option value="968b102e-55a4-4371-922b-0a1310d7bb39">Jeep tours</option>
-                                                <option value="0056d922-4efc-49f4-ba08-732138ccb511">Cyklistika a MTB</option>
-                                                <option value="05df122e-08ae-4943-8e1a-87cdce6ebb66">Lyžování, freeride,skialp</option>
-                                                <option value="6c8fa1dc-41ae-480b-8056-a22fcdbdea72">Relax a digitálnínomádství</option>
-                                                <option value="f9add468-e048-4388-98c2-f3bc3e7bb30a">Cestování s dětmi</option>
+                                                <option value="0056d922-4efc-49f4-ba08-732138ccb511">Cyklistika a MTB
+                                                </option>
+                                                <option value="05df122e-08ae-4943-8e1a-87cdce6ebb66">Lyžování,
+                                                    freeride,skialp</option>
+                                                <option value="6c8fa1dc-41ae-480b-8056-a22fcdbdea72">Relax a
+                                                    digitálnínomádství</option>
+                                                <option value="f9add468-e048-4388-98c2-f3bc3e7bb30a">Cestování s dětmi
+                                                </option>
                                             </select>
 
                                         </div>
@@ -1159,19 +1168,19 @@
     </script>
 
     <script>
-        document.addEventListener('mouseup', function (e) {
-            const monthPicker = document.querySelector('.month__picker--container');
-            if (!monthPicker.contains(e.target) && monthPicker.classList.contains('month__picker--container--active')) {
-                monthPicker.classList.remove('month__picker--container--active')
-            }
-
-
-            document.querySelectorAll('.custom--select')
+        const handleCloseElements = (className, ActiveClassName, event) =>{
+            document.querySelectorAll('.'+ className)
                 .forEach(item => {
-                    if (!item.contains(e.target) && item.classList.contains('open')) {
-                        item.classList.remove('open')
+                    if (!item.contains(event.target) && item.classList.contains(ActiveClassName)) {
+                        item.classList.remove(ActiveClassName)
                     }
-                })
+            })
+        }
+        document.addEventListener('mouseup', function (e) {
+            handleCloseElements('month__picker--container', "month__picker--container--active", e)
+            handleCloseElements('custom--select', "open", e)
+            handleCloseElements('filter__element', "filter__element--active", e)
+            handleCloseElements('dropdown__container', "nav-dropdown--active", e)
         });
     </script>
 
