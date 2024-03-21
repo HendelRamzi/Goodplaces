@@ -256,6 +256,7 @@ MOBILE NAVIGATION MENU
 .city-list li {
     padding: 1rem;
     font-size: 16px;
+    color: #086059;
 }
 
 .city-list li a {
@@ -390,7 +391,7 @@ MEGA MENU NAVIGATION
 }
 
 .contry__list--megamenu--item a {
-    color: #767676;
+    color: #086059;
     font-weight: 600;
     text-transform: capitalize;
 }
