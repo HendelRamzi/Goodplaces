@@ -42,7 +42,7 @@
 
     <header>
         <div class="top-navigation d-none d-lg-block">
-            <div class="container-fluid" style="padding: 8px 24px;">
+            <div class="container" style="padding: 8px 24px;">
                 <div class="row">
                     <div class="col-6">
                         <div class="d-flex align-items-center justify-content-start">
@@ -129,7 +129,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="padding: 8px 24px; position: relative;">
+        <div class="container" style="padding: 8px 24px; position: relative;">
             <div class="row" style="position: relative;">
 
 
@@ -603,15 +603,15 @@
 
                 <div class="dropdown__container nav-dropdown">
                     <div class="nav-dropdown__content">
-                        <div class="row" style="height: 27rem;">
+                        <div class="row" style="height: 32rem;">
 
-                            <div class="col-2 navigation-flex__columns__left ">
+                            <div class="col-3 navigation-flex__columns__left ">
                                 <div class="">
                                     <ul class="nav navigation__continents flex-column" id="myTab" role="tablist">
                                         <li class="nav-item ">
                                             <a class="nav-link active d-flex align-items-center justify-content-between"
                                                 id="eu-tab" data-toggle="tab" href="#eu" role="tab" aria-controls="eu"
-                                                aria-selected="true">Europe
+                                                aria-selected="true">EVROPA
 
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
                                                     fill="currentColor" class="bi bi-chevron-right "
@@ -624,7 +624,7 @@
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center justify-content-between"
                                                 id="as-tab" data-toggle="tab" href="#as" role="tab" aria-controls="as"
-                                                aria-selected="false">Asia
+                                                aria-selected="false">Asie
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
                                                     fill="currentColor" class="bi bi-chevron-right "
                                                     viewBox="0 0 16 16">
@@ -636,7 +636,7 @@
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center justify-content-between"
                                                 id="al-tab" data-toggle="tab" href="#al" role="tab" aria-controls="al"
-                                                aria-selected="false">America latina
+                                                aria-selected="false">Jižní Amerika
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
                                                     fill="currentColor" class="bi bi-chevron-right "
                                                     viewBox="0 0 16 16">
@@ -648,7 +648,7 @@
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center justify-content-between"
                                                 id="am-tab" data-toggle="tab" href="#am" role="tab" aria-controls="am"
-                                                aria-selected="false">America
+                                                aria-selected="false">Střední Amerika
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
                                                     fill="currentColor" class="bi bi-chevron-right "
                                                     viewBox="0 0 16 16">
@@ -660,7 +660,7 @@
                                         <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center justify-content-between"
                                                 id="af-tab" data-toggle="tab" href="#af" role="tab" aria-controls="af"
-                                                aria-selected="false">Africa
+                                                aria-selected="false">Afrika
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
                                                     fill="currentColor" class="bi bi-chevron-right "
                                                     viewBox="0 0 16 16">
@@ -675,14 +675,14 @@
                                     <a class="continent_linkbtn" href="">Browse All Places</a>
                                 </div>
                             </div>
-                            <div class="col-10 h-100">
+                            <div class="col-9  h-100">
                                 <div class="row tab-content h-100" id="myTabContent">
                                     <div class="col-12 tab-pane fade show active h-100" id="eu" role="tabpanel"
                                         aria-labelledby="europe-tab">
-                                        <div class="row h-100">
+                                        <div class="row h-100" >
 
                                             <div class="col-8 h-100">
-                                                <h3 class="continants__title">Europe destinations</h3>
+                                                <h3 class="continants__title">Evropa destinations</h3>
                                                 <ul class="contry__list--megamenu">
                                                     <li class="contry__list--megamenu--item">
                                                         <a href="">France</a>
@@ -705,9 +705,13 @@
                                                 </ul>
                                             </div>
                                             <div class="continant__bg col-4"
-                                                style="background-image: url(./europe.png);">
+                                                style="background-image: url(./Europe_m.jpg);">
                                                 <div class="continant__bg--overlay"></div>
-                                                <div class=" h-100 text-white" style="position: relative; z-index: 10;">
+                                                <div class="row h-100">
+                                                    <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                                                        <h1 class="continant__bg--title">EVROPA</h1>
+                                                        <a href="#" class="continant__bg--button">Find out more </a>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -716,51 +720,81 @@
 
                                     <div class="col-12 tab-pane fade h-100" id="as" role="tabpanel"
                                         aria-labelledby="as-tab">
-                                        <div class="row h-100">
+                                        <div class="row h-100" style="overflow: hidden;">
                                             <div class="col-8 h-100">
-                                                <h3 class="continants__title">asia destinations</h3>
+                                                <h3 class="continants__title">Asie destinations</h3>
                                                 <ul class="contry__list--megamenu">
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">Cambodia</a>
+                                                        <a href="">Indie</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">China</a>
+                                                        <a href="">Nepál</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">India</a>
+                                                        <a href="">Írán</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">Japan</a>
+                                                        <a href="">Kyrgyzstán</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Tádžikistán</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Kazachstán</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Tibet</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Gruzie</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Uzbekistán</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Čína</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Turkmenistán</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Barma (Myanmar)</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Mongolsko</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Pákistán</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Indonésie</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
                                                         <a href="">Laos</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">Malaysia</a>
-                                                    </li>
-                                                    <li class="contry__list--megamenu--item">
-                                                        <a href="">Nepal</a>
-                                                    </li>
-                                                    <li class="contry__list--megamenu--item">
-                                                        <a href="">Singapore</a>
-                                                    </li>
-                                                    <li class="contry__list--megamenu--item">
-                                                        <a href="">South Korea</a>
-                                                    </li>
-                                                    <li class="contry__list--megamenu--item">
-                                                        <a href="">Sri Lanka</a>
-                                                    </li>
-                                                    <li class="contry__list--megamenu--item">
-                                                        <a href="">Thailand</a>
-                                                    </li>
-                                                    <li class="contry__list--megamenu--item">
                                                         <a href="">Vietnam</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Saúdská Arábie</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Afghánistán</a>
+                                                    </li>
+                                                    <li class="contry__list--megamenu--item">
+                                                        <a href="">Bangladéš</a>
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="continant__bg col-4" style="background-image: url(./asia.png);">
+                                            <div class="continant__bg col-4" style="background-image: url(./Asia.jpeg);">
                                                 <div class="continant__bg--overlay"></div>
-                                                <div class=" h-100 text-white" style="position: relative; z-index: 10;">
+                                                <div class="h-100" style="position: relative; z-index: 10;">
+                                                    <div class="row h-100">
+                                                        <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                                                            <h1 class="continant__bg--title">Asie</h1>
+                                                            <a class="continant__bg--button">Find out more </a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -773,31 +807,31 @@
                                         aria-labelledby="al-tab">
                                         <div class="row h-100">
                                             <div class="col-8 h-100">
-                                                <h3 class="continants__title">Europe destinations</h3>
+                                                <h3 class="continants__title">Jižní Amerika destinations</h3>
                                                 <ul class="contry__list--megamenu">
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">France</a>
+                                                        <a href="">Peru</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">Germany</a>
+                                                        <a href="">Bolívie</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">Spain</a>
+                                                        <a href="">Kolumbie</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">Portugal</a>
-                                                    </li>
-                                                    <li class="contry__list--megamenu--item">
-                                                        <a href="">Sweden</a>
-                                                    </li>
-                                                    <li class="contry__list--megamenu--item">
-                                                        <a href="">Portugal</a>
+                                                        <a href="">Venezuela</a>
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
-                                                <div class=" h-100 bg-dark">
-                                                    vddvq
+                                            <div class="continant__bg col-4" style="background-image: url(./LatinAmerica.jpeg);">
+                                                <div class="continant__bg--overlay"></div>
+                                                <div class="h-100" style="position: relative; z-index: 10;">
+                                                    <div class="row h-100">
+                                                        <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                                                            <h1 class="continant__bg--title">Jižní Amerika</h1>
+                                                            <a class="continant__bg--button">Find out more </a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -808,31 +842,31 @@
                                         aria-labelledby="am-tab">
                                         <div class="row h-100">
                                             <div class="col-8 h-100">
-                                                <h3 class="continants__title">America destinations</h3>
+                                                <h3 class="continants__title">Střední Amerika destinations</h3>
                                                 <ul class="contry__list--megamenu">
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">France</a>
+                                                        <a href="">Mexiko</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">Germany</a>
+                                                        <a href="">Guatemala</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">Spain</a>
+                                                        <a href="">Belize</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">Portugal</a>
-                                                    </li>
-                                                    <li class="contry__list--megamenu--item">
-                                                        <a href="">Sweden</a>
-                                                    </li>
-                                                    <li class="contry__list--megamenu--item">
-                                                        <a href="">Portugal</a>
+                                                        <a href="">Kostarika</a>
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
-                                                <div class=" h-100 bg-dark">
-                                                    vddvq
+                                            <div class="continant__bg col-4" style="background-image: url(./CentralAmerica.jpg);">
+                                                <div class="continant__bg--overlay"></div>
+                                                <div class="h-100" style="position: relative; z-index: 10;">
+                                                    <div class="row h-100">
+                                                        <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                                                            <h1 class="continant__bg--title">Střední Amerika</h1>
+                                                            <a class="continant__bg--button">Find out more </a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -843,31 +877,34 @@
                                         aria-labelledby="af-tab">
                                         <div class="row h-100">
                                             <div class="col-8 h-100">
-                                                <h3 class="continants__title">Africa destinations</h3>
+                                                <h3 class="continants__title">Afrika destinations</h3>
                                                 <ul class="contry__list--megamenu">
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">France</a>
+                                                        <a href="">Alžírsko</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">Germany</a>
+                                                        <a href="">Egypt</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">Spain</a>
+                                                        <a href="">Maroko</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">Portugal</a>
+                                                        <a href="">Keňa</a>
                                                     </li>
                                                     <li class="contry__list--megamenu--item">
-                                                        <a href="">Sweden</a>
-                                                    </li>
-                                                    <li class="contry__list--megamenu--item">
-                                                        <a href="">Portugal</a>
+                                                        <a href="">Tanzánie</a>
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="col-4">
-                                                <div class=" h-100 bg-dark">
-                                                    vddvq
+                                            <div class="continant__bg col-4" style="background-image: url(./Africa.jpeg);">
+                                                <div class="continant__bg--overlay"></div>
+                                                <div class="h-100" style="position: relative; z-index: 10;">
+                                                    <div class="row h-100">
+                                                        <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                                                            <h1 class="continant__bg--title">Afrika</h1>
+                                                            <a class="continant__bg--button">Find out more </a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -989,8 +1026,7 @@
                                             <option value="4842c506-743b-4af1-aebb-f43cfb5982b9">Uzbekistán</option>
                                             <option value="7286e897-a5a7-4706-93e9-6f7cfb4d2798">Čína</option>
                                             <option value="fe67be58-ba86-49c2-a982-da201656c57d">Turkmenistán</option>
-                                            <option value="4b989306-c23f-4811-8a86-b5c66f6c211f">Barma (Myanmar)
-                                            </option>
+                                            <option value="4b989306-c23f-4811-8a86-b5c66f6c211f">Barma (Myanmar)</option>
                                             <option value="282a1c66-0226-4c92-a567-37e5ef620421">Mongolsko</option>
                                             <option value="105f7aa4-e6da-4b01-9325-81bc9a49fca6">Pákistán</option>
                                             <option value="fc4219f5-197d-4336-a879-e1bdb4cb9fcc">Indonésie</option>
