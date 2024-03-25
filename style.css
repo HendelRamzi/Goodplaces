@@ -295,8 +295,8 @@ MEGA MENU NAVIGATION
 
 .nav-dropdown {
     top: 100%;
-    left: .5%;
-    width: calc(99%);
+    left: -2rem;
+    width: calc(100% + 4rem);
     position: absolute;
     border-radius: 0;
     z-index: 1;
