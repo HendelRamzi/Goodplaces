@@ -388,6 +388,7 @@ MEGA MENU NAVIGATION
 }
 
 
+
 .continant__bg {
     position: relative;
     width: 580px; 
@@ -403,8 +404,8 @@ MEGA MENU NAVIGATION
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #086059e9;
-    opacity: 20%;
+    background-color: #000000e9;
+    opacity: 30%;
 }
 
 .continant__bg--title{
