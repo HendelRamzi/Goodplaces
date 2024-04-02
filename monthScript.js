@@ -136,6 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
         month__body.querySelectorAll('.month__item')
             .forEach(button => {
                 button.addEventListener('click', e => {
+                    e.preventDefault(); 
                     setMonthRange(e); 
                     setMonthRangeStyle(); 
                 })

@@ -86,6 +86,20 @@ DROPDOWN ITEMS
     background-color: #08605934;
 }
 
+.dropdown__button--logged button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.dropdown__button--logged button span{
+    font-size: 20px;
+}
+
+.dropdown__button--logged button::before{
+    display: none !important;
+}
+
 /* 
 ---------------------------------------------------
 MOBILE NAVIGATION MENU
@@ -413,7 +427,7 @@ MEGA MENU NAVIGATION
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    text-shadow : 0 4px 8px rgba(0,0,0,.25); 
+    text-shadow : 0px 6px 18px rgba(0, 0, 0, 0.9), 0px -2px 30px rgba(0, 0, 0, 0.5), 0px 2px 2px rgba(0, 0, 0, 0.9); 
     margin-bottom: 20px;
     color: white;
     text-align: center;
@@ -473,12 +487,13 @@ MEGA MENU NAVIGATION
 .filter__element {
     position: absolute;
     top: 118%;
-    left: calc((-700px + 466px) - ((-700px + 466px) / 2));
+    left: calc(  (-700px + 466px) - ((-700px + 466px) / 2)   );
+    left: calc(  calc((-700px + 540px) - ((-700px + 540px) / 2)) + 15px );
     min-width: 700px;
     padding: 16px;
     background: white;
     border-radius: 4px;
-    border: 1px solid #0860592a;
+    border: 1px solid #0860592a;  
     display: none;
 }
 
